@@ -22,6 +22,27 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## for usage 
+  #add component tag as
+
+#    <app-fan-of-page [info]="pageName"  (output)="onClicked($event)"></app-fan-of-page>
+where 'info' is an input of Array holding info[0]===AppId
+and info[1] is PageName you want to check weather user has liked or not
+
+and 
+
+(output)="onClicked($event)"
+it will show you message weather user has liked your page or not;
+message:1->user does not likes your page
+           or
+        2->user likes your page
+
+
+to get link in git 
+
+##make sure you are importing
+HttpClientModule in parent component where you are using this
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
