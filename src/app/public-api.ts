@@ -1,0 +1,1 @@
+export * from './fan-of-page/fan-of-page.component';
